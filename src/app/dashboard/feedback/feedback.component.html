@@ -1,0 +1,26 @@
+<div class="feedback-container">
+    <h2>Feedback</h2>
+    <p>We value your feedback! Please fill out the form below:</p>
+    <form [formGroup]="feedbackForm" (ngSubmit)="submitFeedback()">
+      <label for="feedback">Your Feedback:</label>
+      <textarea
+        id="feedback"
+        formControlName="feedback"
+        rows="5"
+        [class.invalid]="feedbackControl?.invalid && feedbackControl?.touched"
+      ></textarea>
+      <div *ngIf="feedbackControl?.invalid && feedbackControl?.touched" class="error-message">
+        <small *ngIf="feedbackControl?.errors?.['required']">Feedback is required.</small>
+        <small *ngIf="feedbackControl?.errors?.['minlength']">
+          Feedback must be at least 10 characters long.
+        </small>
+      </div>
+      <button type="submit" [disabled]="feedbackForm.invalid">Submit</button>
+    </form>
+  
+   
+    <div *ngIf="feedbackSubmitted" class="popup">
+      Feedback submitted successfully! Thank you for your input.
+    </div>
+  </div>
+  

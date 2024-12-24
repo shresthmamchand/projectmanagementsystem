@@ -1,0 +1,43 @@
+<div class="settings-container">
+  <h2>Settings</h2>
+  <p>Customize your preferences for the Project Management System:</p>
+
+  <ul>
+    <li (click)="toggleChangePassword()">Change password</li>
+    <li (click)="toggleUpdateProfile()">Update profile information</li>
+    <li (click)="toggleNotificationPreferences()">Set notification preferences</li>
+    <li (click)="toggleTaskReminders()">Enable/Disable task reminders</li>
+  </ul>
+
+  
+  <div *ngIf="showChangePassword" class="form-container">
+    <h3>Change Password</h3>
+    <form (ngSubmit)="onChangePassword()">
+      <label for="current-password">Current Password:</label>
+      <input type="password" id="current-password" [(ngModel)]="currentPassword" name="currentPassword" required />
+
+      <label for="new-password">New Password:</label>
+      <input type="password" id="new-password" [(ngModel)]="newPassword" name="newPassword" required />
+
+      <label for="confirm-password">Confirm New Password:</label>
+      <input type="password" id="confirm-password" [(ngModel)]="confirmPassword" name="confirmPassword" required />
+
+      <button type="submit">Update Password</button>
+    </form>
+    <p *ngIf="passwordError" class="error">{{ passwordError }}</p>
+  </div>
+
+ 
+  <div *ngIf="showUpdateProfile" class="form-container">
+    <h3>Update Profile</h3>
+    <p>Form to update profile information goes here.</p>
+  </div>
+  <div *ngIf="showNotificationPreferences" class="form-container">
+    <h3>Notification Preferences</h3>
+    <p>Form to update notification preferences goes here.</p>
+  </div>
+  <div *ngIf="showTaskReminders" class="form-container">
+    <h3>Task Reminders</h3>
+    <p>Options to enable/disable task reminders go here.</p>
+  </div>
+</div>

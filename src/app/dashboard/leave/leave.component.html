@@ -1,0 +1,31 @@
+<div class="leaves-container">
+    <h2>Apply for Leave</h2>
+  
+    
+    <form (ngSubmit)="applyLeave()" class="leave-form">
+      <input
+        type="text"
+        placeholder="Enter your name"
+        [(ngModel)]="leaveDetails.name"
+        name="name"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Enter your department"
+        [(ngModel)]="leaveDetails.department"
+        name="department"
+        required
+      />
+      <textarea
+        placeholder="Reason for leave"
+        [(ngModel)]="leaveDetails.reason"
+        name="reason"
+        required
+      ></textarea>
+      <label for="date">Select Leave Date:</label>
+      <input type="date" [(ngModel)]="leaveDetails.date" name="date" required />
+      <button type="submit" class="btn">Apply Leave</button>
+    </form>
+  </div>
+  

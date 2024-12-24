@@ -1,0 +1,37 @@
+
+.leaves-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .leave-form input,
+  .leave-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .leave-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .leave-form button:hover {
+    background-color: #218838;
+  }
+  
+  .leave-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

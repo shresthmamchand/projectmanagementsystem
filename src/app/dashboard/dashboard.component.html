@@ -1,0 +1,25 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <h2>Project Management</h2>
+    <nav>
+      <ul>
+        <li><a routerLink="/dashboard/tasks" routerLinkActive="active-link">Tasks</a></li>
+        <li><a routerLink="/dashboard/leave-apply" routerLinkActive="active-link">Leaves</a></li>
+        <li><a routerLink="/dashboard/settings" routerLinkActive="active-link">Settings</a></li>
+        <li><a routerLink="/dashboard/company-policy" routerLinkActive="active-link">Company Policy</a></li>
+      <li><a routerLink="/dashboard/my-calendar" routerLinkActive="active-link">My Calendar</a></li>
+      <li><a routerLink="/dashboard/feedback" routerLinkActive="active-link">Feedback</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div *ngIf="showDashboardContent" class="dashboard-content">
+      
+      <h1>Welcome to Project Management System</h1>
+      
+    </div>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+ 

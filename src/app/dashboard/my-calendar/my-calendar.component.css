@@ -1,0 +1,13 @@
+.calendar-container {
+    padding: 1rem;
+    background: #eef6ff;
+    border-radius: 8px;
+  }
+  
+  .calendar {
+    padding: 2rem;
+    border: 2px dashed #87ceeb;
+    text-align: center;
+    color: #87ceeb;
+  }
+  

@@ -1,0 +1,95 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  input.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input.form-control:focus {
+    border-color: #ff758c;
+    outline: none;
+    box-shadow: 0 0 6px rgba(255, 117, 140, 0.4);
+  }
+  
+  button.btn-primary {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    background: #ff5c7a;
+  }
+  
+  .text-danger {
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  p a {
+    color: #ff758c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  p a:hover {
+    color: #ff5c7a;
+  }
+  
